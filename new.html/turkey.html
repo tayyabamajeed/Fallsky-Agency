@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="destinations.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Skyfall Agency</h1>
+
+        <div class="icon-group">
+
+            <a href="../index.html">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9InJnYigyNDYsIDI0OCwgMjEzKSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhvdXNlLWljb24gbHVjaWRlLWhvdXNlIj48cGF0aCBkPSJNMTUgMjF2LThhMSAxIDAgMCAwLTEtMWgtNGExIDEgMCAwIDAtMSAxdjgiLz48cGF0aCBkPSJNMyAxMGEyIDIgMCAwIDEgLjcwOS0xLjUyOGw3LTUuOTk5YTIgMiAwIDAgMSAyLjU4MiAwbDcgNS45OTlBMiAyIDAgMCAxIDIxIDEwdjlhMiAyIDAgMCAxLTIgMkg1YTIgMiAwIDAgMS0yLTJ6Ii8+PC9zdmc+"
+                    alt="home">
+            </a>
+
+            <a href="../aboutus.html">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9InJnYigyNDYsIDI0OCwgMjEzKSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8taWNvbiBsdWNpZGUtaW5mbyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48cGF0aCBkPSJNMTIgMTZ2LTQiLz48cGF0aCBkPSJNMTIgOGguMDEiLz48L3N2Zz4="
+                    alt="info">
+            </a>
+
+            <a href="../contactus.html">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9InJnYigyNDYsIDI0OCwgMjEzKSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBob25lLWljb24gbHVjaWRlLXBob25lIj48cGF0aCBkPSJNMTMuODMyIDE2LjU2OGExIDEgMCAwIDAgMS4yMTMtLjMwM2wuMzU1LS40NjVBMiAyIDAgMCAxIDE3IDE1aDNhMiAyIDAgMCAxIDIgMnYzYTIgMiAwIDAgMS0yIDJBMTggMTggMCAwIDEgMiA0YTIgMiAwIDAgMSAyLTJoM2EyIDIgMCAwIDEgMiAydjNhMiAyIDAgMCAxLS44IDEuNmwtLjQ2OC4zNTFhMSAxIDAgMCAwLS4yOTIgMS4yMzMgMTQgMTQgMCAwIDAgNi4zOTIgNi4zODQiLz48L3N2Zz4="
+                    alt="Contact">
+            </a>
+        </div>
+    </header>
+
+    <div class="center">
+        <h2>Explore Turkey With Skyfall</h2>
+   </div>
+   
+           <p class="intro">Turkey is a land of rich history, beautiful landscapes, and delicious cuisine. With Skyfall, experience the best of this amazing country through our specially designed travel packages.</p>    
+ 
+
+    <div class="pic">
+        <img src="https://onedayitinerary.com/wp-content/uploads/2017/11/One-day-in-Istanbul-Itinerary.jpg"
+            alt="Istanbul" width="600" class="slide" style="display: block;">
+        <img src="https://i0.wp.com/onedayitinerary.com/wp-content/uploads/2021/05/One-day-in-Antalya-Itinerary-2.jpg?fit=800%2C600&ssl=1"
+            alt="antalya" width="600" class="slide" style="display: none;">
+        <img src="https://i.postimg.cc/Gtn8cTdW/Izmir.png" alt="Izmir" width="600" class="slide" style="display: none;">
+        <img src="https://i.postimg.cc/Dz67qsdd/ankara-resized-800x600.png"
+            alt="Ankara" width="600" class="slide" style="display: none;">
+    </div>
+
+    <script>
+        let i = 0, s = document.querySelectorAll(".slide");
+        document.onkeydown = e => {
+            if (e.key === "ArrowRight") i = (i + 1) % s.length;
+            if (e.key === "ArrowLeft") i = (i - 1 + s.length) % s.length;
+            s.forEach((sl, j) => sl.style.display = i === j ? "block" : "none");
+        };
+    </script>
+
+    <br>
+    <div class="para">
+
+    <h3>Istanbul</h3>
+    <p>The city that bridges Europe and Asia, Istanbul offers magnificent landmarks like the Hagia Sophia, Blue Mosque, and the vibrant Grand Bazaar. Enjoy a relaxing Bosphorus cruise and savor famous Turkish foods like Doner Kebab, Baklava, and traditional Turkish tea.</p>
+
+   
+
+    <h3>Antalya</h3>
+    <p>Known for its stunning beaches and natural beauty, Antalya is perfect for those who love sun and sea. Visit the famous Düden Waterfalls and explore the charming Old Town. Delight in fresh seafood, Simit, and strong Turkish coffee while enjoying luxury beach resorts and exciting water sports.</p>
+
+ 
+
+    <h3>Izmir</h3>
+    <p>A modern coastal city with beautiful promenades, ancient ruins, and lively markets. Izmir is famous for seafood and the delicious Kumru sandwich. Relax at the beaches and immerse yourself in the local atmosphere with guided market tours.</p>
+
+ 
+
+    <h3>Ankara</h3>
+    <p>The peaceful capital city, Ankara is home to important sites like Ataturk's Mausoleum and the Museum of Anatolian Civilizations. Explore Turkish culture with historical tours and taste local favorites such as Turkish Kebabs and Borek.</p>
+    </div>
+
+
+    <h3 class="box">Packages & Prices</h3>
+
+    <div class="box">
+    <table border="2">
+        <tr>
+            <th><i>Packages</i></th>
+            <th><i>Package Highlight</i></th>
+            <th><i>Duration</i></th>
+            <th><i>Price</i></th>
+        </tr>
+        <tr>
+            <td><i>package 1</i></td>
+            <td><i>City tour, shopping, boat ride </i></td>
+            <td><i>2 Week</i></td>
+            <td><i>PKR  2,00,000</i></td>
+        </tr>
+        <tr>
+            <td><i>package 2</i></td>
+            <td><i>Beach resort, water sports, relaxation</i></td>
+            <td><i>1 Week</i></td>
+            <td><i>PKR 1,85,000</i></td>
+        </tr>
+        <tr>
+            <td><i>package 3</i></td>
+            <td><i>Coastal visit, local market tour</i></td>
+            <td><i>5 days</i></td>
+            <td><i> PKR 1,60,000</i></td>
+        </tr>
+        <tr>
+            <td><i>package 4</i></td>
+            <td><i>History tour, sightseeing</i></td>
+            <td><i>3 days</i></td>
+            <td><i>PKR 1,00,000</i></td>
+        </tr>
+    </table>
+
+    </div>
+
+    <div class="para">
+
+    <h3><b>Why Choose Skyfall?</b></h3>
+    </div>
+
+    <ul>
+        <li>Comfortable 4 & 5-star hotels</li>
+        <li>Airport pick-up and drop-off</li>
+        <li>Includes daily breakfast, lunch, and dinner</li>
+        <li>English-speaking guides to assist you</li>
+        <li>Local SIM cards with data for easy communication</li>
+        <li> 24/7 customer support to make your trip hassle-free</li>
+    </ul>
+
+    <p class="center">Book your dream trip to Turkey with Skyfall today, and let us take care of everything while you enjoy the journey!</p>
+
+    <div class="center">
+    <a class="learn-more" href="../form.html">Book Now</a>
+</div>
+</body>
+
+</html>

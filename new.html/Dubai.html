@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+    <header>
+        <h1>Skyfall Agency</h1>
+
+        <div class="icon-group">
+
+            <a href="../index.html">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9InJnYigyNDYsIDI0OCwgMjEzKSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWhvdXNlLWljb24gbHVjaWRlLWhvdXNlIj48cGF0aCBkPSJNMTUgMjF2LThhMSAxIDAgMCAwLTEtMWgtNGExIDEgMCAwIDAtMSAxdjgiLz48cGF0aCBkPSJNMyAxMGEyIDIgMCAwIDEgLjcwOS0xLjUyOGw3LTUuOTk5YTIgMiAwIDAgMSAyLjU4MiAwbDcgNS45OTlBMiAyIDAgMCAxIDIxIDEwdjlhMiAyIDAgMCAxLTIgMkg1YTIgMiAwIDAgMS0yLTJ6Ii8+PC9zdmc+"
+                    alt="home">
+            </a>
+
+            <a href="../aboutus.html">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9InJnYigyNDYsIDI0OCwgMjEzKSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWluZm8taWNvbiBsdWNpZGUtaW5mbyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48cGF0aCBkPSJNMTIgMTZ2LTQiLz48cGF0aCBkPSJNMTIgOGguMDEiLz48L3N2Zz4="
+                    alt="info">
+            </a>
+
+            <a href="../contactus.html">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9InJnYigyNDYsIDI0OCwgMjEzKSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXBob25lLWljb24gbHVjaWRlLXBob25lIj48cGF0aCBkPSJNMTMuODMyIDE2LjU2OGExIDEgMCAwIDAgMS4yMTMtLjMwM2wuMzU1LS40NjVBMiAyIDAgMCAxIDE3IDE1aDNhMiAyIDAgMCAxIDIgMnYzYTIgMiAwIDAgMS0yIDJBMTggMTggMCAwIDEgMiA0YTIgMiAwIDAgMSAyLTJoM2EyIDIgMCAwIDEgMiAydjNhMiAyIDAgMCAxLS44IDEuNmwtLjQ2OC4zNTFhMSAxIDAgMCAwLS4yOTIgMS4yMzMgMTQgMTQgMCAwIDAgNi4zOTIgNi4zODQiLz48L3N2Zz4="
+                    alt="Contact">
+            </a>
+        </div>
+    </header>
+     
+    <div class="center">
+        <h2>Explore UAE With Skyfall</h2>
+    </div>
+
+    <p class="intro">Dubai features landmarks like Burj Khalifa and Dubai Mall. Enjoy a cruise on Dubai Creek and try Shawarma, Majboos, and Arabic coffee.</p>
+
+    <div class="pic">
+    <img src="C:\Users\Muhammad Rafay\Downloads\dubai_city_resized_800x600.png" alt="Dubai" width="600" class="slide" style="display: block;">
+    <img src="C:\Users\Muhammad Rafay\Downloads\fe69c5ae-ab72-4cd3-a219-cfe7bffe3a91.jpg_resized.png" alt="abu dhabi" width="600" class="slide" style="display: none;">
+    <img src="C:\Users\Muhammad Rafay\Downloads\787ad36a-1644-419e-94aa-fac822361c03.jpg_resized.png" alt="shajah" width="600" class="slide" style="display: none;">
+    <img src="C:\Users\Muhammad Rafay\Downloads\3406ac5d-58ca-4a9d-bcc9-ff6e5d835fed.jpg_resized.png" alt="Fujairah" width="600" class="slide" style="display: none;">
+    </div>
+
+    <script>
+        let i = 0, s = document.querySelectorAll(".slide");
+        document.onkeydown = e => {
+            if (e.key === "ArrowRight") i = (i + 1) % s.length;
+            if (e.key === "ArrowLeft") i = (i - 1 + s.length) % s.length;
+            s.forEach((sl, j) => sl.style.display = i === j ? "block" : "none");
+        };
+    </script>
+
+    <div class="para">
+    <h3>Dubai</h3>
+    <p>A city of superlatives, Dubai is famous for iconic landmarks like the Burj Khalifa, Dubai Mall, and the spectacular Dubai Fountain. Take a scenic cruise on the Dubai Creek and enjoy popular Emirati dishes such as Shawarma, Majboos, and traditional Arabic coffee.</p>
+
+
+    <h3>Abu Dhabi</h3>
+    <p>The capital city offers a mix of heritage and modernity with attractions like the Sheikh Zayed Grand Mosque, Ferrari World, and Yas Island. Indulge in fresh seafood and local delicacies while exploring luxurious resorts and cultural sites.</p>
+
+
+    <h3>Sharjah</h3>
+    <p>Known as the cultural capital, Sharjah boasts beautiful museums, art galleries, and the serene Corniche Walk. Experience traditional markets and enjoy treats like Luqaimat and Khuzi while soaking in the city’s artistic vibe.</p>
+
+
+    <h3>Fujairah</h3>
+    <p>Nestled along the Gulf of Oman, Fujairah is famous for its stunning beaches, rugged mountains, and historic forts. It’s a perfect destination for snorkeling, diving, and exploring natural beauty. Sample local dishes like Madrouba and fresh seafood while enjoying the peaceful coastal atmosphere.</p>
+
+    </div>
+    <h3 class="box">Packages and Prices</h3>
+    <div class="box">
+        <table border="2">
+            <tr>
+                <th><i>Packages</i></th>
+                <th><i>Package Highlights</i></th>
+                <th><i>Duration</i></th>
+                <th><i>Price</i></th>
+            </tr>
+            <tr>
+                <td><i>Package 1</i></td>
+                <td><i>City tour, desert safari, cruise dinner</i></td>
+                <td><i>3 Weeks</i></td>
+                <td><i>PKR 2,56,000</i></td>
+            </tr>
+            <tr>
+                <td><i>Package 2</i></td>
+                <td><i>Grand Mosque visit, theme parks, cultural tour</i></td>
+                <td><i>2 Week</i></td>
+                <td><i>PKR 1,89,000</i></td>
+            </tr>
+            <tr>
+                <td><i>Package 3</i></td>
+                <td><i>Museum visit, art walk, traditional markets</i></td>
+                <td><i>1 Week</i></td>
+                <td><i>PKR 1,48,000</i></td>
+            </tr>
+            <tr>
+                <td><i>Package 4</i></td>
+                <td><i>Beach stay, snorkeling, fort tour</i></td>
+                <td><i>5 Days</i></td>
+                <td><i>PKR 1,10,000</i></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="para">
+
+    <h3><b>Why Choose Skyfall?</b></h3>
+    </div>
+
+    <ul>
+        <li>Comfortable 4 & 5-star hotels</li>
+        <li>Airport pick-up and drop-off</li>
+        <li>Includes daily breakfast, lunch, and dinner</li>
+        <li>English-speaking guides to assist you</li>
+        <li>Local SIM cards with data for easy communication</li>
+        <li> 24/7 customer support to make your trip hassle-free</li>
+    </ul>
+
+    <p class="center">Book your dream trip to Turkey with Skyfall today, and let us take care of everything while you enjoy the journey!</p>
+
+    <div class="center">
+    <a class="learn-more" href="../form.html">Book Now</a>
+    </div>
+
+</body>
+</html>

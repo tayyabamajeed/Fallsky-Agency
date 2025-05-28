@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(246, 248, 213);
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(32, 87, 129);
+    color: rgb(246, 248, 213);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 50px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.icon-group img {
+    width: 24px;
+    margin-left: 15px;
+}
+
+.para {
+  margin-left: 18px;
+}
+
+h2 {
+    color:  rgb(32, 87, 129);
+    font-size: xx-large;
+}
+
+h3 {
+  display: inline-block;
+  color: rgb(32, 87, 129); 
+}
+
+th, tr {
+  border: 2px;
+  color: rgb(32, 87, 129);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.tittle {
+    margin-top: 12px;
+    margin-left: -65px;
+}
+
+.center {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 18px;
+}
+
+
+.intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.learn-more {
+    display: inline-block;
+    background: rgb(79, 149, 157);
+    color: rgb(246, 248, 213);
+    padding: 15px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.learn-more:hover {
+    background: rgb(58, 120, 127);
+}
+
+.hing {
+  text-align: center;
+  margin-top: 300px;
+  font-weight: bold;
+  font-size: 100px;
+}
