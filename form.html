@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="form.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Form</title>
+  <link rel="stylesheet" href="form.css" />
 </head>
 <body>
-    <h1>Booking Form</h1>
+  <h1>Booking Form</h1>
 
-    <form action="https://formspree.io/f/xblonzgk" method="POST">       
-         <input type="hidden" name="_redirect" value="thanks.html">
-        <label for="name">Name</label>
-        <input type="text" placeholder="Enter Your Name" required>
-        <br>
-        <br>
-        <label for="phone number">Phone Number</label>
-        <input type="number" placeholder="Enter Your Phone Number" required>
-        <br>
-        <br>
-        <label for="email">Email</label>
-        <input type="email" placeholder="Enter Your Email address" required>
-        <br>
-        <br>
-        <label for="Where would you like to book your trip?">Where would you like to book your trip?</label>
-        
-        <br>
-        <input type="radio" name="trip" id="1" required>Package 1
-        <br>
-        <input type="radio" name="trip" id="1">Package 2
-        <br>
-        <input type="radio" name="trip" id="1">Package 3
-        <br>
-        <input type="radio" name="trip" id="1">Package 4  
+  <form action="https://formspree.io/f/xblonzgk" method="POST">
+    <input type="hidden" name="_redirect" value="thanks.html" />
 
-        <br>
-        <br>
+    <label for="name">Name</label>
+    <input type="text" name="name" placeholder="Enter Your Name" required />
+    <br><br>
 
-        <label for="person">Person</label>
-        <input type="number" placeholder="How Many People?" required>
+    <label for="phone">Phone Number</label>
+    <input type="number" name="phone" placeholder="Enter Your Phone Number" required />
+    <br><br>
 
-        <br>
-        <br>
+    <label for="email">Email</label>
+    <input type="email" name="email" placeholder="Enter Your Email address" required />
+    <br><br>
 
-        <label for="date">Date</label>
-        <input type="date" placeholder="Date" required>
+    <label>Where would you like to book your trip?</label><br>
+    <input type="radio" name="trip" value="Package 1" required /> Package 1
+    <br>
+    <input type="radio" name="trip" value="Package 2" /> Package 2
+    <br>
+    <input type="radio" name="trip" value="Package 3" /> Package 3
+    <br>
+    <input type="radio" name="trip" value="Package 4" /> Package 4
+    <br>
+    <br>
 
-        <br>
-        <br>
+    <label for="person">Person</label>
+    <input type="number" name="person" placeholder="How Many People?" required />
+    <br><br>
 
-        <button type="submit">Book Now</button>
+    <label for="date">Date</label>
+    <input type="date" name="date" required />
+    <br><br>
 
-
-    </form>
+    <button type="submit">Book Now</button>
+  </form>
 </body>
 </html>
