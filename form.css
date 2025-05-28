@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(246, 248, 213);
+}
+
+h1 {
+    color: rgb(32, 87, 129);;
+}
+
+input[type="text"] {
+    width: 11%;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    padding: 8px 0;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+input[type="email"] {
+    width: 16%;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    padding: 8px 0;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+input[type="number"] {
+    width: 17%;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    padding: 8px 0;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+input[type="date"] {
+    width: 20%;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    padding: 8px 0;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-bottom: 2px solid rgb(32, 87, 129);
+
+}
+
+.learn-more {
+    display: inline-block;
+    text-align: center;
+    background: rgb(32, 87, 129);
+    color: rgb(246, 248, 213);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin-top: -170px;
+}
+button {
+  background-color: rgb(32, 87, 129);   
+  color: rgb(246, 248, 213);                  
+  border: none;                 
+  padding: 10px 20px;            
+  font-size: 16px;
+  border-radius: 5px;          
+  cursor: pointer;              
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(32, 87, 129);
+}
