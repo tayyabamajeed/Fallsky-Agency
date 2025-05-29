@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(246, 248, 213);
+    background-color: white;
     margin: 0;
 }
 
@@ -39,7 +39,7 @@ header h1 {
 }
 
 .hing {
-  color: rgb(32, 87, 129);;
+  color: black;
 }
 
 .black {
