@@ -1,3 +1,4 @@
+
 body {
     background-color: white;
     margin: 0;
@@ -7,7 +8,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgb(217, 234, 253);
+    background-color: rgb(120, 134, 199);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -43,5 +44,5 @@ header h1 {
 }
 
 .black {
-    color: rgb(79, 149, 157);
+    color:rgb(120, 134, 199);
 }
