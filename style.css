@@ -8,7 +8,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgb(217, 234, 253);
+  background-color: rgb(120, 134, 199);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -29,10 +29,12 @@ header h1 {
 
 h2 {
     display: inline-block;
-    color:  black;
+    background-color:  rgb(120, 134, 199);
+    color: white;
     padding: 5px 15px;
     border-radius: 6px;
 }
+
 
 .tittle {
     margin-top: 80px;
@@ -46,8 +48,8 @@ h2 {
 .learn-more {
   display: inline-block;
   text-align: center;
-  background: rgb(32, 87, 129);
-  color: rgb(246, 248, 213);
+  background: rgb(120, 134, 199);
+  color: white;
   padding: 10px 20px;
   border-radius: 6px;
 }
